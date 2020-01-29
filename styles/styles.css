@@ -16,6 +16,7 @@
 }
 .header {
   display: flex;
+  justify-content: center;
 }
 .div {
   display: flex;
@@ -291,7 +292,7 @@
   }
 }
 
-@media (min-width: 427px) and (max-width: 769px) {
+@media (min-width: 427px) and (max-width: 915px) {
   .headernav {
     height: 540px;
     background-image: url(../images/topbg2.png);
@@ -319,7 +320,7 @@
   }
 }
 
-@media (min-width: 770px) {
+@media (min-width: 916px) {
   .headernav {
     height: 700px;
     background-image: url(../images/topbg3.png);
