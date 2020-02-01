@@ -159,7 +159,7 @@
 .overlay {
   position: relative;
   width: 120px;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 20px auto;
 }
 .partnerphoto {
   width: 120px;
@@ -189,7 +189,6 @@
   font-weight: 700;
   text-align: center;
   margin: 0;
-  padding-top: 20px;
 }
 .description {
   display: block;
