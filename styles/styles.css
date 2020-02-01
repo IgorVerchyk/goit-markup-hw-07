@@ -30,10 +30,21 @@
 }
 
 /* general clases*/
-
-.container {
+.hero {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sect{
+  display: flex;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 70px;
 }
 
 .headernav {
@@ -98,6 +109,7 @@
   text-transform: uppercase;
   z-index: 2;
   margin: 0 auto 0 auto;
+  z-index: 2;
 }
 .headtext2 {
   font-size: 18px;
@@ -115,7 +127,6 @@
   font-weight: 700;
   text-align: center;
   margin: 0 auto 0 auto;
-  padding-top: 70px;
 }
 .findbutt {
   display: inline-block;
@@ -126,10 +137,10 @@
   text-align: center;
   text-decoration: none;
   margin: 0 auto 0 auto;
-  padding: 15px 50px 15px 50px;
+  padding: 13px 40px 13px 40px;
   border-radius: 20px;
   border: 2px solid var(--butt-color1);
-  z-index: 2;
+  z-index: 5;
 }
 .findbutt:hover,
 :focus {
@@ -140,6 +151,7 @@
 }
 .partlist {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto 0 auto;
   list-style: none;
   padding: 0;
@@ -180,7 +192,7 @@
   padding-top: 20px;
 }
 .description {
-  max-width: 220px;
+  display: block;
   font-size: 14px;
   color: var(--text-color3);
   font-family: var(--first-font);
@@ -221,6 +233,9 @@
 /* media*/
 
 @media screen and (max-width: 426px) {
+  .container{
+    max-width: 280px;
+  }
   .headernav {
     height: 540px;
     background-image: url(../images/topbg1.png);
@@ -240,8 +255,9 @@
   .logo {
     margin-top: 120px;
   }
-  .headtext1 {
-    margin-top: 40px;
+  .hero {
+    width: 270px;
+    padding-top: 40px;
   }
   .headtext2 {
     width: 220px;
@@ -250,7 +266,7 @@
     width: 260px;
   }
   .partlist {
-    flex-direction: column;
+    max-width: 220px;
     padding-top: 20px;
     padding-bottom: 30px;
   }
@@ -281,8 +297,12 @@
     display: inline-block;
     z-index: 2;
   }
-  .headtext1 {
-    margin-top: 160px;
+  .hero{
+    width: 475px;
+    margin-top: 150px;
+  }
+  .headtext1{
+    font-size: 52px;
   }
   .headtext2 {
     margin-top: 40px;
@@ -293,13 +313,14 @@
 }
 
 @media (min-width: 427px) and (max-width: 915px) {
+  .container{
+    max-width: 460px;
+  }
   .headernav {
     height: 540px;
     background-image: url(../images/topbg2.png);
   }
   .partlist {
-    width: 460px;
-    flex-wrap: wrap;
     padding-bottom: 40px;
     padding-top: 40px;
   }
@@ -321,13 +342,14 @@
 }
 
 @media (min-width: 916px) {
+  .container{
+    max-width: 915px;
+  }
   .headernav {
     height: 700px;
     background-image: url(../images/topbg3.png);
   }
   .partlist {
-    width: 915px;
-    flex-wrap: wrap;
     padding-bottom: 40px;
     padding-top: 40px;
   }
